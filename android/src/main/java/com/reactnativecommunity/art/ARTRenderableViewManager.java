@@ -20,9 +20,9 @@ import com.facebook.react.uimanager.ViewManager;
  */
 public class ARTRenderableViewManager extends ViewManager<View, ReactShadowNode> {
 
-  public static final String CLASS_GROUP = "ARTGroupNew";
-  public static final String CLASS_SHAPE = "ARTShapeNew";
-  public static final String CLASS_TEXT = "ARTTextNew";
+  public static final String CLASS_GROUP = "ARTGroup";
+  public static final String CLASS_SHAPE = "ARTShape";
+  public static final String CLASS_TEXT = "ARTText";
 
   private final String mClassName;
 
