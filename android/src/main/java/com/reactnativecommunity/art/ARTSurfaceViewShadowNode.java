@@ -106,8 +106,10 @@ public class ARTSurfaceViewShadowNode extends LayoutShadowNode
   private void markChildrenUpdatesSeen(ReactShadowNode shadowNode) {
     for (int i = 0; i < shadowNode.getChildCount(); i++) {
       ReactShadowNode child = shadowNode.getChildAt(i);
-      child.markUpdateSeen();
-      markChildrenUpdatesSeen(child);
+      if (child != null) {
+        child.markUpdateSeen();
+        markChildrenUpdatesSeen(child);
+      }
     }
   }
 
