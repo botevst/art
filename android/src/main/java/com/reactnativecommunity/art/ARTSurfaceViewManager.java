@@ -22,7 +22,7 @@ import com.facebook.react.uimanager.ThemedReactContext;
 public class ARTSurfaceViewManager extends
     BaseViewManager<ARTSurfaceView, ARTSurfaceViewShadowNode> {
 
-  public static final String REACT_CLASS = "ARTSurfaceView";
+  public static final String REACT_CLASS = "ARTSurfaceViewNew";
 
   private static final YogaMeasureFunction MEASURE_FUNCTION = new YogaMeasureFunction() {
     @Override
