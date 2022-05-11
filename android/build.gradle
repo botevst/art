@@ -31,7 +31,6 @@ android {
 
 repositories {
   google()
-  jcenter()
   mavenCentral()
 }
 
@@ -39,7 +38,6 @@ allprojects {
     repositories {
         mavenLocal()
         google()
-        jcenter()
         maven {
             url "$rootDir/../node_modules/react-native/android"
         }
@@ -48,5 +46,5 @@ allprojects {
 
 dependencies {
     //noinspection GradleDynamicVersion
-    api 'com.facebook.react:react-native:+'
+    implementation 'com.facebook.react:react-native:+'
 }
